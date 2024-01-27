@@ -17,12 +17,13 @@ function input() {
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "https://users.roblox.com/v1/usernames/users");
     xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.setRequestHeader("Referer", "https://roblox.com");
     xhr.send(json);
     var json_data;
     if (xhr.readyState == 4)
         if (xhr.status == 200)
             json_data = JSON.parse(xhr.responseText);
-    var username = toString(json_data['data'][0])
+    var username = toString(json_data['data'][0]['id'])
     if (json['Blue'][username.toLowerCase()] != null) {
         document.getElementById("Output1Text").textContent = "Blue: " + json['Blue'][username.toLowerCase()];
     } else {
