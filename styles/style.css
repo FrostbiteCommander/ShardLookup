@@ -34,11 +34,13 @@
 
 #InputButton {
     border-radius: 8px;
-    background-color: greenyellow;
+    background-color: aqua;
+    border: 0px;
 }
 
 #Input2 {
     border-radius: 8px;
+    border: 0px;
 }
 
 #Toggles {
@@ -72,7 +74,7 @@
 /* Classes */
 
 .textcolor1 {
-    color:greenyellow;
+    color:aqua;
 }
 
 .inlineblock {
