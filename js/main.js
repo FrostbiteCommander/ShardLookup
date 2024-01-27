@@ -17,7 +17,7 @@ function input() {
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "https://users.roblox.com/v1/usernames/users");
     xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.setRequestHeader("Referer", "https://roblox.com");
+    xhr.setRequestHeader("Origin", "https://roblox.com");
     xhr.send(json);
     var json_data;
     if (xhr.readyState == 4)
